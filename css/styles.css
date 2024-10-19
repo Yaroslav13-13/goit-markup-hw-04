@@ -58,6 +58,10 @@ a {
   /* padding-top: 24px;
   padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:   
+        0px 2px 1px rgba(46, 47, 66, 0.08),   
+        0px 1px 1px rgba(46, 47, 66, 0.16),   
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-logo .logo-part {
@@ -163,7 +167,7 @@ opacity: 1;
 
 .hero {
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.4)), url(../images/people-office\ 1-min.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 188px;
@@ -172,6 +176,8 @@ opacity: 1;
   padding: 188px 0 188px;
   min-width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
+  background-size: cover; /*виправлено*/
 }
 
 .hero-title {
@@ -203,6 +209,7 @@ opacity: 1;
   margin: 0 auto;
   display: block;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) /*виправлено*/
 }
 
 .hero-btn:hover,
@@ -321,6 +328,7 @@ opacity: 1;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  justify-content: center; /* виправлено*/
 }
 
 .taste-item-image {
@@ -329,6 +337,7 @@ opacity: 1;
 .social-icons{
   display: flex;
   gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*виправлено*/
   }
 
 .taste-soc-list {
@@ -349,8 +358,18 @@ align-items: center;
 justify-content: center;
 }
 
+/* _________виправлено___________ */
+.social-icons-taste:hover{
+  background-color: #404bbf;
+}
+.social-icons-taste:focus{
+  background-color: #404bbf;
+}
+/*_________________________________*/
+
 .icon {
-fill: transparent;
+/* fill: transparent; */
+fill: #f4f4fd;
 }
 
 .container-item {
@@ -406,6 +425,7 @@ fill: transparent;
   gap: 24px;
   width: calc((100% - 48px) / 3);
   position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);   /*Виправлено*/
 }
 
 .portfolio-item:hover{
@@ -444,11 +464,10 @@ transform: translateY(0%);
   left: 0;
   height: 100%;
   width: 100%;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding: 40px 32px;
   transform: translateY(100%);
-  transition: transform 300ms ;
+  transition: transform 300ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /*виправлено*/
 }
 
 .portfolio-subtitle {
