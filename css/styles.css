@@ -558,7 +558,7 @@ a {
 }
 
 .container-footer-logo {
-  margin-left: 156px;
+  /* margin-left: 156px; */
   margin-top: 0px;
   margin-right: 120px;
 }
@@ -571,4 +571,5 @@ a {
 }
 
 .container-footer-soc {
+  margin-right: 120px;
 }
