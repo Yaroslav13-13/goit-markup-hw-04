@@ -164,7 +164,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1-min.jpg);
+    url(../images/people-office.jpg);
   /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg); */
   background-repeat: no-repeat;
   background-position: center;
@@ -175,7 +175,7 @@ a {
   min-width: 1440px;
   margin: 0 auto;
   max-width: 1440px;
-  background-size: cover; /*виправлено*/
+  background-size: cover;
 }
 
 .hero-title {
@@ -207,7 +207,7 @@ a {
   margin: 0 auto;
   display: block;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*виправлено*/
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -269,7 +269,6 @@ a {
 
 .features-item {
   width: calc((100% - 3 * 24px) / 4);
-  /* display: flex; */
   gap: 24px;
 }
 
@@ -333,7 +332,6 @@ a {
 .social-icons {
   display: flex;
   gap: 24px;
-  transition: ;
 }
 
 .taste-soc-list {
@@ -545,8 +543,12 @@ a {
   justify-content: center;
 }
 
-.social-icons-foote {
+.social-link-footer {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-foote {
+  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .social-link-footer:hover {
@@ -558,7 +560,6 @@ a {
 }
 
 .container-footer-logo {
-  /* margin-left: 156px; */
   margin-top: 0px;
   margin-right: 120px;
 }
